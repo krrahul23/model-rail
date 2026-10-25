@@ -1,0 +1,53 @@
+# OS and editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.idea/
+.vscode/
+.commandcode/
+
+# Environment and secrets.
+# config.yml is committed on purpose: it contains no secrets.
+# Provider credentials are referenced through environment-variable names.
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+
+# Go build artifacts
+/modelrail
+/bin/
+/dist/
+/tmp/
+*.exe
+*.test
+*.out
+*.prof
+*.pprof
+
+# Coverage output
+coverage.out
+coverage.html
+*.coverprofile
+
+# Local Go workspace files
+go.work
+go.work.sum
+
+# Logs
+*.log
+logs/
+
+coding_skills.md
+
+# Local configuration and compose overrides
+config.local.yml
+config.yml
+config.*.local.yml
+docker-compose.override.yml
+
+# Tool caches
+.cache/
